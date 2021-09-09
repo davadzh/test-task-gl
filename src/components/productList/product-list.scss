@@ -1,0 +1,8 @@
+.product-list {
+  width: 100%;
+  margin: 0 auto;
+
+  & > .product {
+    margin-top: 24px;
+  }
+}

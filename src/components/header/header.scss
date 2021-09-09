@@ -1,0 +1,27 @@
+.header {
+  width: 100%;
+  text-align: right;
+  height: 80px;
+  line-height: 80px;
+  background: #1d3153;
+  border-radius: 0 0 10px 10px;
+  padding: 0 30px;
+}
+
+.auth-button {
+  background: #fafafa;
+  color: #1d3153;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 20px;
+  min-width: 200px;
+  cursor: pointer;
+  transition: 0.2s ease;
+
+  &:hover {
+    opacity: 0.8;
+    transition: 0.2s ease;
+  }
+}
