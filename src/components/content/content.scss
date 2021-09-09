@@ -1,4 +1,15 @@
 .content {
   width: 100%;
   margin: 30px 0;
+
+  &-create-button {
+    color: white;
+    background: #1d3153;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 20px 0;
+  }
 }

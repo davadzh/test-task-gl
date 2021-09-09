@@ -1,11 +1,10 @@
 import React from "react";
-import {CreateProductButton} from "../createProductButton";
 import ProductList from "../productList";
 import {CreateProductModal} from "../createProductModal";
 import {withStore} from "../../state/withStore"
 import "./content.scss";
 import {Tile} from "../UI/tile";
-import { v4 as uuidv4 } from 'uuid';
+import {v4 as uuidv4} from 'uuid';
 
 class Content extends React.Component {
   constructor(props) {
@@ -64,7 +63,10 @@ class Content extends React.Component {
       <div className={"content"}>
         <Tile>
           <h1>Frontend Test Task</h1>
-          {this.props.isAuthorized ? <CreateProductButton openModal={openModal}/>
+          {this.props.isAuthorized
+            ? <button onClick={openModal} className={"content-create-button"}>
+                Добавить новый товар
+              </button>
             : <p>Войдите, чтобы добавить/удалить товары</p>}
 
           <ProductList removeProduct={removeProduct}
@@ -73,7 +75,7 @@ class Content extends React.Component {
                                                          setDescription={setProductDescription}
                                                          setPrice={setProductPrice}
                                                          addProduct={addProduct}
-                                                         closeModal={closeModal} />}
+                                                         closeModal={closeModal}/>}
         </Tile>
       </div>
     );
