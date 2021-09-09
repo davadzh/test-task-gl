@@ -9,7 +9,7 @@ export class Input extends React.Component {
   render() {
 
     return (
-      <div className={'login-form-input'}>
+      <div className={'custom-input'}>
         <label>{this.props.label}</label>
         <input type={this.props.type} onChange={this.props.onChange} placeholder={this.props.placeholder}/>
       </div>
